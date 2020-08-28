@@ -108,6 +108,7 @@ data = [
     [2255.77, 2270.28, 2253.31, 2276.22],
 ]
 
+
 kline = (
     Kline()
         .add_xaxis(["2017/7/{}".format(i + 1) for i in range(31)])
