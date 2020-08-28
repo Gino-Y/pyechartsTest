@@ -1,0 +1,13 @@
+prefix=D:/Work/pyecharts/pyechartsVenv/Library
+exec_prefix=D:/Work/pyecharts/pyechartsVenv/Library
+libdir=D:/Work/pyecharts/pyechartsVenv/Library/lib
+sharedlibdir=D:/Work/pyecharts/pyechartsVenv/Library/lib
+includedir=D:/Work/pyecharts/pyechartsVenv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
