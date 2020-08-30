@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="ef14078f973c4bb690217725796e0c5a" class="chart-container" style="width:1000px; height:600px;"></div>
+    <div id="112cb6e4c3ce483789116dba19112604" class="chart-container" style="width:1000px; height:600px;"></div>
     <script>
-        var chart_ef14078f973c4bb690217725796e0c5a = echarts.init(
-            document.getElementById('ef14078f973c4bb690217725796e0c5a'), 'white', {renderer: 'canvas'});
-        var option_ef14078f973c4bb690217725796e0c5a = {
+        var chart_112cb6e4c3ce483789116dba19112604 = echarts.init(
+            document.getElementById('112cb6e4c3ce483789116dba19112604'), 'white', {renderer: 'canvas'});
+        var option_112cb6e4c3ce483789116dba19112604 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -49,10 +49,26 @@
     "series": [
         {
             "type": "bar",
+            "name": "\u5e73\u53f01 \u9500\u552e\u6570\u636e",
             "data": [
                 1234,
-                232,
+                2329,
                 2134
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "bar",
+            "name": "\u5e73\u53f02 \u9500\u552e\u6570\u636e",
+            "data": [
+                464,
+                789,
+                744
             ],
             "barCategoryGap": "20%",
             "label": {
@@ -65,10 +81,12 @@
     "legend": [
         {
             "data": [
-                ""
+                "\u5e73\u53f01 \u9500\u552e\u6570\u636e",
+                "\u5e73\u53f02 \u9500\u552e\u6570\u636e"
             ],
             "selected": {
-                "": true
+                "\u5e73\u53f01 \u9500\u552e\u6570\u636e": true,
+                "\u5e73\u53f02 \u9500\u552e\u6570\u636e": true
             },
             "show": true,
             "padding": 5,
@@ -152,9 +170,18 @@
             "padding": 5,
             "itemGap": 10
         }
-    ]
+    ],
+    "dataZoom": {
+        "show": true,
+        "type": "slider",
+        "realtime": true,
+        "start": 0,
+        "end": 1500,
+        "orient": "horizontal",
+        "zoomLock": false
+    }
 };
-        chart_ef14078f973c4bb690217725796e0c5a.setOption(option_ef14078f973c4bb690217725796e0c5a);
+        chart_112cb6e4c3ce483789116dba19112604.setOption(option_112cb6e4c3ce483789116dba19112604);
     </script>
 </body>
 </html>
